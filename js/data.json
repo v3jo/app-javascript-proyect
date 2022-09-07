@@ -1,0 +1,31 @@
+[{
+    "campeon": "Yuumi",
+    "rol":"soporte",
+    "asesinatos": "4",
+    "muertes": "2",
+    "asistencias": "6"
+},
+
+{
+"campeon": "Zyra",
+"rol":"soporte",
+"asesinatos": "4",
+"muertes": "2",
+"asistencias": "6"
+},
+
+{
+    "campeon": "BlitzCranck",
+ "rol":"soporte",
+ "asesinatos": "4",
+ "muertes": "2",
+ "asistencias": "6"
+},
+
+{
+    "campeon": "Thresh",
+  "rol":"soporte",
+  "asesinatos": "4",
+  "muertes": "2",
+ "asistencias": "6"
+}]

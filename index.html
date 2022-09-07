@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+        <div>
+            <button id="btnModalLogin" class="btn btn-outline-primary me-2 toggles m-3" type="button" data-bs-toggle="modal"
+                        data-bs-target="#modalLogin">Iniciar Sesion</button>
+                    <button id="btnLogout" class="btn btn-outline-secondary d-none toggles m-3" type="button">Desconectarse</button>
+                    <p id="nombreUsuario" class="d-none toggles"></p>
+        </div>
+        <section class="toggles">
+            <h1>Bienvenidos a la app de datos de campeones</h1>
+            <p>inicie sesión para poder usar</p>
+        </section>
+        <div>
+            <div class="modal " id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="modalLoginLabel">Ingresá</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body py-2 px-4">
+                            <input id="emailLogin" class="form-control my-4" type="email"
+                                placeholder="Ingresa tu correo electrónico" required>
+                            <input id="passwordLogin" class="form-control my-4" type="password"
+                                placeholder="Ingresa tu contraseña" required>
+                        </div>
+                        <div class="modal-footer d-block">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="recordarme">
+                                <label class="form-check-label" for="recordarme">
+                                    Recordarme en este equipo
+                                </label>
+                            </div>
+                            <button class="btn btn-outline-primary" id="login" type="submit">Ingresar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <section id="contModalTable" class="toggles d-none">
+        <h2>ingresa datos</h2>
+        <section>
+            <form action="" id="formDatos">
+                <div>
+                    <label for="campeon">campeon</label>
+                <input type="text" id="campeon">
+                </div>
+                <div>
+                    <label for="rol">rol</label>
+                <input type="text" id="rol">
+                </div>
+                <div>
+                    <label for="asesinatos">asesinatos</label>
+                <input type="text" id="asesinatos">
+                </div>
+                <div>
+                    <label for="muertes">muertes</label>
+                <input type="text" id="muertes">
+                </div>
+                <div>
+                    <label for="asistencias">asistencias</label>
+                <input type="text" id="asistencias">
+                </div>
+                <div>
+                    <button id="botonSubirDatos" type="button">ingresar</button>
+                    <button id="botonBorrarDatos" type="button">borrar</button>
+                </div>
+            </form>
+        </section>
+    <section>
+        <h2>Tabla de datos</h2>
+        <table class="table table-dark" id="datosTabla">
+            <thead>
+              <tr>
+                <th scope="col">Campeon</th>
+                <th scope="col">Rol</th>
+                <th scope="col">Asesinatos</th>
+                <th scope="col">Muertes</th>
+                <th scope="col">Asistencias</th>
+              </tr>
+            </thead>
+            <tbody id="cuerpoTabla">
+              
+            </tbody>
+          </table>
+    </section>
+    </section>
+    <section id="contModalTable2" class="toggles d-none">
+        <!--KDA y Porcentaje de victoria-->
+    <div><h2>Tabla de KDA y porcentaje de Victoria</h2></div>
+    <section>
+        <form action="" id="formDatosKDA">
+            <div>
+                <label for="victorias">victorias</label>
+            <input type="number" id="victorias">
+            </div>
+            <div>
+                <label for="derrotas">derrotas</label>
+            <input type="number" id="derrotas">
+            </div>
+            <div>
+                <button id="botonSubirDatosKDA" type="button" >ingresar</button>    
+            </div> 
+        </form>
+    </section>
+    <table class="table table-sm">
+        <thead>
+          <tr>
+            <th scope="col">KDA</th>
+            <th scope="col">Victoria</th>
+            <th scope="col">Derrota</th>
+            <th scope="col">Porcentaje de victoria</th>
+          </tr>
+        </thead>
+        <tbody id="cuerpoTablaSegunda">
+        
+        </tbody>
+      </table>
+
+    </section>
+
+    <!--BS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!--Sweet-Alert-->
+    <script src="js/sweetalert2.all.min.js"></script>
+<!--Script-propio-->
+    <script src="js/script.js"></script>
+</body>
+</html>
