@@ -1,0 +1,47 @@
+.header__centrado{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+    margin-top: 30vh;
+    width: 50%;
+    border: 3px solid rgba(19, 73, 253, 0.781);
+    padding: 10px;
+    z-index: -1;
+}
+
+.header__centrado--text{
+    text-align: center;
+    color: rgb(218, 238, 255);
+
+}
+
+.btn__color--desc{
+    color: rgba(19, 206, 253, 0.781);
+}
+.form__style{
+    color: rgb(218, 238, 255);
+    display: flex;
+}
+
+.table__style{
+    color: rgb(218, 238, 255);
+}
+
+.label__form{
+    margin-left: 2rem;
+    width: auto;
+}
+
+.color__default--span{
+    color: #FFFF;
+}
+
+.user__style{
+    color: rgb(61, 210, 255);
+}
+
+body{
+    
+    background: url(../css/assets/psyops-pyke-splash-art-8k-league-of-legends-lol-wallpaper-1920x1080_48.jpg);
+    background-size: cover;
+}

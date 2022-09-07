@@ -282,7 +282,7 @@ function recuperarUsuario(storage) {
 
 /*-------Saludar al usuario mediante el Dom------ */
 function saludar(usuario) {
-    nombreUsuario.innerHTML = `Bienvenido/a, <span>${usuario.name}</span>`
+    nombreUsuario.innerHTML = `<span class="color__default--span">Bienvenido/a,</span> <span class="user__style">${usuario.name}</span>`
 }
 
 /*----Funcion para cambiar la clase del index y mostrar o no lo que se quiera-----*/
